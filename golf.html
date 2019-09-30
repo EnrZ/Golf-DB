@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <title>Golf Scores</title>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="golf.css"/>
+    <script type="text/javascript" src="golf.js"></script>
+    <script type="text/javascript" src="autocomplete.js"></script>
+  </head>
+
+  <body>
+    <header>
+      Welcome to Golf Scores
+    </header>
+    <div id="searchbar">
+      <ul>
+        <li id="searchbarPlayer">
+          <form class="searchForm" action="Player.php" method="GET">
+            <input id="PlayerSearch" onkeyup="autocomp.keyup(event);" onkeydown="autocomp.keydown(event);" 
+            onfocus="enterText( 'Player' ); autocomp.start('Player');" onblur="leaveBox( 'Player' );" 
+            value='Player' type="text" name="searchstr" autocomplete="off" spellcheck="off">
+            <input id="Playerhidden" type="hidden" value="pid">
+          </form>
+          <ul id="PlayerComplete">
+          </ul>
+        </li>
+        <li id="searchbarCourse" >
+          <form class="searchForm" action="Course.php" method="GET">
+            <input id="CourseSearch" onkeyup="autocomp.keyup(event);" onkeydown="autocomp.keydown(event);" 
+            onfocus="enterText( 'Course' ); autocomp.start('Course');" onblur="leaveBox( 'Course' );" 
+            value='Course' type="text" name="searchstr" autocomplete="off" spellcheck="off">
+            <input id="Coursehidden" type="hidden" value="cid">
+          </form>
+          <ul id="CourseComplete">
+          </ul>
+        </li>
+        <li id="searchbarRound" >
+          <form class="searchForm" action="Round.php" method="GET">
+            <input id="RoundSearch" onkeyup="autocomp.keyup(event);" onkeydown="autocomp.keydown(event);" 
+            onfocus="if (this.value=='Date YYYY-MM-DD') this.value=''; autocomp.start('Round');" onblur="if (this.value=='') this.value='Date YYYY-MM-DD';" 
+            value='Date YYYY-MM-DD' type="text" name="searchstr" autocomplete="off" spellcheck="off">
+            <input id="Roundhidden" type="hidden" value="rid">
+          </form>
+          <ul id="RoundComplete">
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div id="linkbar">
+      <ul>
+        <li>
+          <a href="Round.php">Add Round</a>
+        </li>
+        <li>
+          <a href="Course.php">Add Course</a>
+        </li>
+        <li>
+          <a href="Player.php">Add Player</a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="welcome">
+      <p>
+        Welcome to Golf Scores! This is a place where you can enter and track your golf scores at different courses. You can compare your own scores or those of other players as well including your friends.
+      </p>
+    </div>
+    <div id="results">
+    </div>
+  </body>
+</html>

@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #BAEE86;
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#baee86), color-stop(100%,#ade86f)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, #baee86 0%,#ade86f 100%); /* Chrome10+,Safari5.1+ */
+}
+
+a:link{
+  color: #1a1a1a;
+  text-decoration: none;
+  font-size: 90%;
+}
+
+a:visited{
+  color: #999999;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #00ff00;
+  text-decoration: none;
+}
+
+header {
+  background-color:#4d9900;
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-size: 200%;
+}
+
+input {
+  border-radius: 3px;
+  background-color: #BAEE86;
+}
+
+#searchbar ul, li {
+  display: inline-block;
+  list-style: none;
+  padding-right: 15px;
+  padding-bottom: 0;
+  padding-top: 0;
+  margin-bottom: -3;
+}
+
+#searchbar {
+  background-color: #3a7800;
+}
+
+#linkbar {
+//  position: absolute;
+//  top: 95px;
+  background-color: #3a7800;
+//  z-index:1;
+}
+
+#linkbar ul, li {
+  display: inline-block;
+  list-style: none;
+  padding-right: 15px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.highlight {
+  color: #00aa00;
+}
+
+#welcome {
+  padding-right: 10px;
+  padding-left: 20px;
+  border-style: solid;
+  margin: 20px;
+  max-width: 500px;
+}
+
+#PlayerComplete {
+  position: absolute;
+  display: block;
+  z-index: 1000;
+  border-style: solid;
+  border-width: 1px;
+  visibility: hidden;
+  background-color: #BAEE86;
+  margin-top: -16;
+  border-bottom-left-radius: 10px 5px;
+  border-bottom-right-radius: 10px 5px;
+}
+
+#PlayerComplete li {
+  display: block;
+  cursor: pointer;
+}
+
+#PlayerComplete ul {
+  padding-left:10;
+}
+
+#CourseComplete {
+  position: absolute;
+  display: block;
+  z-index: 1000;
+  border-style: solid;
+  border-width: 1px;
+  visibility: hidden;
+  background-color: #BAEE86;
+  margin-top: -16;
+  border-bottom-left-radius: 10px 5px;
+  border-bottom-right-radius: 10px 5px;
+}
+
+#CourseComplete li {
+  display: block;
+  cursor: pointer;
+}
+
+#CourseComplete ul {
+  padding-left:10;
+}
+
+#RoundComplete {
+  position: absolute;
+  display: block;
+  z-index: 1000;
+  border-style: solid;
+  border-width: 1px;
+  visibility: hidden;
+  background-color: #BAEE86;
+  margin-top: -16;
+  border-bottom-left-radius: 10px 5px;
+  border-bottom-right-radius: 10px 5px;
+}
+
+#RoundComplete li {
+  display: block;
+  cursor: pointer;
+}
+
+#RoundComplete ul {
+  padding-left:10;
+}
+
+#updateButton {
+  visibility: visible;
+}
+
+.roundUpdate {
+  visibility: hidden;
+}
+
+.score {
+  text-align: center;
+}
+
+#nameError	{color: red;}
+
+#locError	{color: red;}
+
+#parError	{color: red;}
+
+#dateError	{color: red;}
+
+.cell_head {
+  width: 10%;
+}
+
+.cell_button {
+  width: 9%;
+}
+
+.cell_width {
+  width: 4.5%;
+}
+
+.par {
+  font-style:italic;
+  text-align: center;
+}
+
+.tables {
+  width: 100%;
+}
+
+#scoreError {
+  color: red;
+}
