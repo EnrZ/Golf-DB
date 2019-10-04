@@ -300,7 +300,7 @@
 
         $cid = mysqli_fetch_assoc($result)['cid'];
 
-        $default_par = 3; // because I'm lazy
+        $default_par = 3;
         for ($i = 1; $i <= $holes; $i++) {
             golf_query( $db,
                 "insert into GOLF_HOLE (cid, hole_number, par) values ('%s', '%s', '%s')",
