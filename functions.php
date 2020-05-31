@@ -18,7 +18,7 @@
     function player_id() { return get_param('pid'); }
 
     function get_db_handle() {
-        $dbh = mysqli_connect()        OR die(mysqli_error());
+        $dbh = mysqli_connect('localhost', 'root')        OR die(mysqli_error());
         mysqli_select_db($dbh ,'test')   OR die(mysqli_error());
         return $dbh;
     }
