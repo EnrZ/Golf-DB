@@ -39,6 +39,4 @@ CREATE TABLE GOLF_SCORE(
     PRIMARY KEY(RID, PID, HOLE_NUMBER)
 ) ENGINE = innodb;
 
-This SQL should be added before running the website so there's no empty dropdown menu in the main page by default.
-
-INSERT INTO GOLF_COURSE (name, location) VALUES ('Majors Golf Club' , 'Palm Bay, Florida');
+Add Player and Course to DB before adding Round
